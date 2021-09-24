@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "584401281722",
+    "project_id": "roomkhoj-81952",
+    "storage_bucket": "roomkhoj-81952.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584401281722:android:177fc432cbf03312379883",
+        "android_client_info": {
+          "package_name": "me.abhinaysirohi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584401281722-g3joa7atige083hee9lff9u8jlnnbrff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3EAXuXuQ0YuWdrB8_Y88fbuu6cPihnGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584401281722-g3joa7atige083hee9lff9u8jlnnbrff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

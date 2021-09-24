@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/white"
+    app:cardBackgroundColor="@color/card_bg"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:layout_gravity="top"
+    app:cardUseCompatPadding="true">
+
+
+    <!--    android:onClick="getdetail">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mess Name"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_toRightOf="@id/veg_non_veg"
+                android:text="Mess description"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/veg_non_veg"
+                android:layout_below="@id/tv1"
+                app:srcCompat="@drawable/veg_s1"
+                />
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv1"
+                android:layout_alignParentRight="true"
+                android:text=" Price"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv3"
+                android:layout_toLeftOf="@id/tv3"
+                android:text="@string/Rs"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <ImageView
+                android:id="@+id/call_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv2"
+                android:layout_below="@id/tv3"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_baseline_call_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/rating_star1_count"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rating_star1"
+                android:textSize="18sp"
+                android:layout_below="@id/tv3"
+                android:layout_alignBaseline="@id/tv2"
+                android:text="3.6"
+
+                />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_star1"
+                android:layout_below="@id/tv3"
+                android:layout_toLeftOf="@id/call_img"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:rating="0.5"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:isIndicator="true"
+                android:numStars="1"
+                android:progressBackgroundTint="#FDC82A"
+                android:progressTint="#FDC82A"
+                android:secondaryProgressTint="#FDC82A"
+                />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
